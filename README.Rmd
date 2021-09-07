@@ -108,14 +108,14 @@ knitr::include_graphics('images/rstudio-create-project-git.png')
 
 ## `usethis` Package
 
-Run these commands in the R console.
+Run these commands in the console pane of RStudio.
 
 ```r
 # install usethis package
 install.packages('usethis')
 
 # get the repo
-newProject <- usethis::use_course('https://github.com/`r params$repoOwner`/`r params$repoName`/archive/master.zip')
+newProject <- usethis::use_course('`r params$repoOwner`/`r params$repoName`')
 ```
 
 Be sure to select the positive prompts such as `yes`, `yeah`, etc.
@@ -130,7 +130,7 @@ knitr::include_graphics('images/ProjectCorner.png')
 
 # Finish Setup
 
-Setting up all of the needed packages^[Linux users might need to install `libxml2-dev` and `zlib1g-dev`] and downloading data will be handled by running the following lines of code in the R console.
+Setting up all of the needed packages^[Linux users might need to install `libxml2-dev` and `zlib1g-dev`] and downloading data will be handled by running the following lines of code in the console pane of RStudio.
 
 ```{r source-setup,eval=FALSE}
 source('prep/install_packages.r')
