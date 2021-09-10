@@ -115,7 +115,7 @@ Run these commands in the R console.
 install.packages('usethis')
 
 # get the repo
-newProject <- usethis::use_course('https://github.com/`r params$repoOwner`/`r params$repoName`/archive/master.zip')
+newProject <- usethis::use_course('`r params$repoOwner`/`r params$repoName`')
 ```
 
 Be sure to select the positive prompts such as `yes`, `yeah`, etc.

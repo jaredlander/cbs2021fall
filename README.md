@@ -86,7 +86,7 @@ Run these commands in the R console.
 install.packages('usethis')
 
 # get the repo
-newProject <- usethis::use_course('https://github.com/jaredlander/cbs2021fall/archive/master.zip')
+newProject <- usethis::use_course('jaredlander/cbs2021fall')
 ```
 
 Be sure to select the positive prompts such as `yes`, `yeah`, etc.
